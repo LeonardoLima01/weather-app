@@ -1,3 +1,10 @@
+let searchForm = document.querySelector("#searchForm");
+let searchInput = document.querySelector("#searchInput");
+let nameDisplayed = document.querySelector("#locationName");
+let weatherIcon = document.querySelector("#weatherIcon");
+let temperature = document.querySelector("#temperature>#text");
+let infoDisplay = document.querySelector("#info");
+
 const apiKey = "add84e844eabefa7b3ae5594556d93e8";
 
 async function getWeather(location) {
@@ -7,15 +14,10 @@ async function getWeather(location) {
   );
   return await data.json();
 }
-let searchInput = document.querySelector("#searchInput");
-let nameDisplayed = document.querySelector("#locationName");
-let weatherIcon = document.querySelector("#weatherIcon");
-let temperature = document.querySelector("#temperature>#text");
-let infoDisplay = document.querySelector("#info");
 
-const searchButton = document.querySelector("#searchButton");
+searchForm.addEventListener("submit", (e) => {
+  e.preventDefault(); // Prevent form from submitting
 
-searchButton.addEventListener("click", () => {
   let locationName = document.querySelector("#searchInput").value;
   getWeather(locationName).then((info) => {
     try {
@@ -27,6 +29,7 @@ searchButton.addEventListener("click", () => {
       infoDisplay.style.display = "flex";
     } catch (err) {
       console.log(err);
+      searchInput.value = "";
       searchInput.placeholder = "Invalid location";
     }
   });
