@@ -76,8 +76,8 @@ body {
 
 #locationName {
   font-size: 3.5vw;
-  border-bottom: 4px solid #eee;
-  width: 90%;
+  border-bottom: 0.5vh solid #eee;
+  width: 100%;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -93,7 +93,7 @@ body {
 
 #celsius {
   font-size: 1.5vw;
-  padding-bottom: 17.5px;
+  padding-bottom: 5.5px;
 }
 
 #temperature > #text {
