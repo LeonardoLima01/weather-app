@@ -22,7 +22,7 @@ body {
   margin-top: 15vh;
 }
 
-#searchDiv {
+#searchForm {
   margin-top: 5vh;
   display: flex;
   align-items: center;
