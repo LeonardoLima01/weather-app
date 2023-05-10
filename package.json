@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/socryy/weather-app.git"
+    "url": "git+https://github.com/LeonardoLima01/weather-app.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/socryy/weather-app/issues"
+    "url": "https://github.com/LeonardoLima01/weather-app/issues"
   },
-  "homepage": "https://github.com/socryy/weather-app#readme",
+  "homepage": "https://github.com/LeonardoLima01/weather-app#readme",
   "devDependencies": {
     "webpack": "^5.76.1",
     "webpack-cli": "^5.0.1"

@@ -1,6 +1,6 @@
 # weather-app
 
-[Live demo here](https://socryy.github.io/weather-app/)
+[Live demo here](https://LeonardoLima01.github.io/weather-app/)
 
 Simple weather app created with HTML, CSS and JS.
 
